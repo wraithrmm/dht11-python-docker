@@ -1,5 +1,5 @@
 FROM python:3.7-slim-buster
 
-ADD ./resources/monitor-sensor.py /monitor-sensor.py
+ADD ./resources/monitor-sensors.py /monitor-sensors.py
 
-CMD ["bash","/start-alice.sh"]
+CMD ["python","/monitor-sensors.py","bedroom"]
